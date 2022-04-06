@@ -1,0 +1,23 @@
+
+
+.icon {
+  color: #fff;
+  border-radius: 50%;
+  border: solid 2px #fff;
+  padding: 3px;
+}
+
+// ==================================================================
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .btn-group,
+  .btn-group > .btn {
+    width: 30%;
+  }
+  //previous btn
+  .btn-group > .btn:not(:last-child) {
+    margin-right: 1em;
+  }
+}
+
+// ==================================================================

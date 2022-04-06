@@ -1,0 +1,169 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~bootstrap/dist/css/bootstrap.min.css";
+//ng-wizard CSS files:
+
+/* Mandatory */
+
+@import '~ng-wizard/themes/ng_wizard.min.css';
+
+/* Optional */
+
+
+/* If a theme other than default is used, the css file for that theme is required. */
+
+// @import '~ng-wizard/themes/ng_wizard_theme_arrows.min.css';
+@import '~ng-wizard/themes/ng_wizard_theme_circles.min.css';
+//@import '~ng-wizard/themes/ng_wizard_theme_dots.min.css';
+// circles container 
+// * {
+//     background: rgb(212, 198, 198);
+
+// }
+
+
+// circles container
+.ng-wizard-theme-circles>ul.step-anchor {
+    position: relative;
+    background: #fff;
+    background-color: rgb(255, 255, 255);
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-image: none;
+    background-size: auto;
+    background-origin: padding-box;
+    background-clip: border-box;
+    border: none;
+    list-style: none;
+    margin-bottom: 20px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+// space between circles
+.ng-wizard-theme-circles>ul.step-anchor>li {
+    margin: 1em auto;
+}
+
+//active circle
+.ng-wizard-theme-circles>ul.step-anchor>li.active>a {
+    border-color: transparent;
+    color: #fff;
+    background-color: #a15a5a;
+}
+
+//untouched - unvisited circle
+.ng-wizard-theme-circles>ul.step-anchor>li>a {
+    // border: 2px solid #a15a5a;
+    border: 2px solid #e7b286;
+    background-color: #ffffff;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 6px 0;
+    border-radius: 50%;
+    text-decoration: none;
+    outline-style: none;
+    z-index: 99;
+    color: rgb(121, 117, 117);
+    line-height: 1;
+    font-size: 15px;
+}
+
+.ng-wizard-theme-circles>ul.step-anchor,
+.ng-wizard-theme-circles .step-content,
+.ng-wizard-theme-circles .ng-wizard-toolbar {
+    background-color: transparent;
+}
+
+// visited circle
+.ng-wizard-theme-circles>ul.step-anchor>li.done>a {
+    background: #fff;
+    background-color: rgb(255, 255, 255);
+    color: rgb(121, 117, 117);
+    // border-color: #9b8e8e;
+    border-color: #e7b286;
+}
+
+.ng-wizard-theme-circles>ul.step-anchor>li.done>a>small {
+    color: #ccc;
+}
+
+.ng-wizard-theme-circles>ul.step-anchor>li.active>a>small {
+    color: rgb(121, 117, 117);
+}
+
+// ==================================================================
+// ==================================================================
+@media (min-width: 375px) {
+    .btn-group,
+    .btn-group>.btn {
+        border-radius: 3px !important;
+        padding-top: 0.2em;
+        padding-bottom: 0.2em;
+        width: 100%;
+        margin: 1em 1.8em;
+    }
+    .btn-group>.btn{
+        border: transparent 0px solid;
+        background: transparent;
+        font-family: 'Texturina', serif;
+        font-size: 1.2em;
+    }
+    //next btn
+    .btn-group>.btn:not(:first-child) {
+        // background: #a15a5a;
+        // color: #ffffff;
+        width: 50%;
+    }
+    //previous btn
+    .btn-group>.btn:not(:last-child):not(.dropdown-toggle) {
+        background: transparent;
+        // margin-right: 0em;
+        // color: rgb(121, 117, 117);
+        margin-left: 0.5em;
+        width: 50%;
+    }
+    .btn-secondary:not(:disabled):not(.disabled):active, .show > .btn-secondary.dropdown-toggle {
+        color: #fff;
+        background-color: transparent; 
+    } 
+}
+
+// ==================================================================
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .btn-group,
+    .btn-group>.btn {
+        width: 30%;
+    }
+    //previous btn
+    .btn-group>.btn:not(:last-child) {
+        margin-right: 1em;
+    }
+}
+
+// ==================================================================
+
+// ======================== global css ========================
+.all {
+    background: url(assets/bg.jpeg) no-repeat center center fixed; 
+      height: 100vh;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+    
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+ #ngwizard{
+    //   height: auto;
+      background: url(assets/bg.jpeg) no-repeat center center fixed; 
+    
+  }

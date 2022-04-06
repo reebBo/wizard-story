@@ -1,0 +1,79 @@
+.content {
+    font-family: 'Texturina', serif;
+    color: white;
+    font-size: 1.6em !important;
+}
+ 
+.img-container{
+    justify-content: center;
+    display: flex; 
+}
+img.pic {
+    width: 95%;
+    border-radius: 255px 55px 225px 55px/55px 225px 55px 255px;
+    border: solid 3px #e7b286;
+    padding: 0.3em; 
+}
+.btn{
+    border-radius: 255px 55px 225px 55px/55px 225px 55px 255px;
+}
+
+
+
+
+@media (min-width: 320px) {
+    img.pic {
+        margin: 1em auto;
+    }
+    .content{
+        font-size: 1em !important;
+    }
+}
+
+@media (min-width: 320px) {
+    .content{
+        font-size: 1.2em !important;
+    }
+}
+
+@media (min-width: 576px) {
+    img.pic {
+        margin: 0em auto;
+    }
+}
+
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+
+@media (min-width: 768px) {
+    .content { 
+        padding-top: 0.9em;
+        padding-left: 1em;
+        line-height: 1.5em; 
+        font-size: 1.4em !important;
+    }
+ 
+    img.pic {
+        margin: 2em auto; 
+    }
+}
+
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+    .story-content { 
+        height: 35em !important; 
+    }
+    .content {
+        line-height: 5.4vmin;
+    }
+    img.pic {
+        margin: 0em auto;
+    }
+}
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {}

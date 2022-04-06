@@ -1,0 +1,101 @@
+ 
+
+@keyframes stretch {
+    0% {
+        transform: scale(.7);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.animated-text { 
+    overflow: hidden; 
+    word-wrap: break-word;
+    white-space: nowrap;
+    animation: typing 6s steps(46) forwards;
+    // display: block;
+    font-family: 'Texturina', serif;
+    font-size: 1.4em;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 66ch;
+    }
+  }
+
+
+ 
+// ==================================================================
+// ==================================================================
+@media (min-width: 350px) {
+     .action{
+        font-size: 2em;  
+        padding-top: 4em;
+        vertical-align: middle; 
+        font-family: 'Zeyada', cursive; 
+        color: #fff;
+        animation-name: stretch;
+        animation-duration: 4.5s;
+        animation-timing-function: ease-out;
+        animation-delay: 0s;
+        animation-direction: alternate;
+        // animation-iteration-count: 1;
+        animation-fill-mode: none;
+        animation-play-state: running;
+        text-decoration: transparent;
+    }
+    
+     span#enter{
+        font-size: 0.7em;
+        margin: 0em 2em;
+    }
+    .animated-text { 
+        // overflow: hidden;  
+        // white-space: nowrap;
+        animation: typing 6s steps(46) forwards; 
+        font-family: 'Texturina', serif;
+        font-size: 0.6em;
+      }
+}
+
+@media (min-width: 450px) {
+  .animated-text { 
+    font-size: 0.7em;
+  }
+}
+  @media (min-width: 550px) {
+    .animated-text { 
+      font-size: 0.8em;
+    }
+  }
+
+  @media (min-width: 620px) {
+    .animated-text { 
+      font-size: 1em;
+    }
+  }
+// ==================================================================
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .action{
+        font-size: 4em; 
+            padding: 2em;
+            vertical-align: middle;
+        }
+      span#enter{
+        font-size: 1em;
+        margin: 0em 2em;
+    }
+    .animated-text { 
+        overflow: hidden; 
+        white-space: nowrap;
+        font-size: 1.4em;
+      }
+}
+
+// ==================================================================
